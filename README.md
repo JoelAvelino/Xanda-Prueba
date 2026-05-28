@@ -1,2 +1,0 @@
-# Xanda-Prueba
-jakatek
