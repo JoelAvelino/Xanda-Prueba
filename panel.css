@@ -1,0 +1,175 @@
+/* panel.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins', sans-serif;
+}
+
+body{
+  display:flex;
+  min-height:100vh;
+  background:#f6f2ec;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+  width:280px;
+  background:#1d5a43;
+  color:white;
+  padding:40px 25px;
+}
+
+/* LOGO */
+
+.logo{
+  display:flex;
+  align-items:center;
+  gap:15px;
+  margin-bottom:60px;
+}
+
+.logo-img{
+  width:50px;
+  height:50px;
+  background:#dfe7de;
+  border-radius:15px;
+}
+
+.logo h1{
+  font-size:3rem;
+}
+
+/* MENU */
+
+.sidebar ul{
+  list-style:none;
+  display:flex;
+  flex-direction:column;
+  gap:35px;
+}
+
+.sidebar a{
+  text-decoration:none;
+  color:white;
+  font-size:1.1rem;
+  transition:.3s;
+}
+
+.sidebar a:hover{
+  color:#d5b08c;
+}
+
+/* MAIN */
+
+.main-content{
+  flex:1;
+  padding:50px;
+}
+
+.main-content h2{
+  font-size:3rem;
+  margin-bottom:40px;
+}
+
+/* CARD */
+
+.panel-card{
+  background:white;
+  padding:40px;
+  border-radius:35px;
+  box-shadow:0 10px 20px rgba(0,0,0,.04);
+}
+
+.panel-card h3{
+  font-size:2rem;
+  margin-bottom:30px;
+}
+
+/* FORM */
+
+#productForm{
+  display:flex;
+  flex-direction:column;
+  gap:22px;
+}
+
+/* INPUTS */
+
+#productForm input,
+#productForm select,
+#productForm textarea{
+  width:100%;
+  border:1px solid #d7d7d7;
+  border-radius:15px;
+  padding:18px;
+  outline:none;
+  background:#fafafa;
+}
+
+#productForm input,
+#productForm select{
+  height:58px;
+}
+
+#productForm textarea{
+  height:140px;
+  resize:none;
+}
+
+/* BUTTON */
+
+#productForm button{
+  width:100%;
+  height:58px;
+  border:none;
+  border-radius:15px;
+  background:#1d5a43;
+  color:white;
+  font-size:1rem;
+  font-weight:600;
+  cursor:pointer;
+  transition:.3s;
+}
+
+#productForm button:hover{
+  background:#123c2d;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+  body{
+    flex-direction:column;
+  }
+
+  .sidebar{
+    width:100%;
+  }
+
+  .main-content{
+    padding:30px;
+  }
+
+  .main-content h2{
+    font-size:2.2rem;
+  }
+
+}
+
+@media(max-width:600px){
+
+  .panel-card{
+    padding:25px;
+  }
+
+  .logo h1{
+    font-size:2rem;
+  }
+
+}
