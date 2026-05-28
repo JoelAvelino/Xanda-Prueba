@@ -1,240 +1,196 @@
-<!-- productos.html -->
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Xanda | Productos</title>
-
-  <link rel="stylesheet" href="productos.css">
-
-  <link rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Xanda | Artesanías de Oaxaca</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 </head>
-
 <body>
 
   <!-- NAVBAR -->
   <header class="header">
-
     <nav class="navbar">
-
       <div class="logo">
         <h1>Xanda</h1>
         <span>Hecho en Oaxaca</span>
       </div>
 
       <ul class="nav-links" id="navLinks">
-        <li><a href="#">Inicio</a></li>
-        <li><a class="active" href="#">Productos</a></li>
-        <li><a href="#">Productores</a></li>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="productores.html">Productores</a></li>
         <li><a href="#">Comunidades</a></li>
         <li><a href="#">Cultura</a></li>
         <li><a href="#">Contacto</a></li>
       </ul>
 
-      <div class="icons">
-
-        <i class="fa-solid fa-magnifying-glass"></i>
-
-        <div class="cart">
-          <i class="fa-regular fa-bag-shopping"></i>
-          <span>2</span>
-        </div>
-
-        <div class="menu-btn" id="menuBtn">
-          <i class="fa-solid fa-bars"></i>
-        </div>
-
+      <div class="menu-btn" id="menuBtn">
+        <i class="fa-solid fa-bars"></i>
       </div>
-
     </nav>
-
   </header>
 
   <!-- HERO -->
-
   <section class="hero">
-
     <div class="hero-text">
-
-      <p class="mini-title">ARTESANÍAS DE OAXACA</p>
-
-      <h2>Nuestros <br> Productos</h2>
-
+      <p class="small-text">ARTESANÍA CON ALMA</p>
+      <h2>Oaxaca hecha a mano</h2>
       <p>
-        Descubre piezas únicas elaboradas por manos
-        oaxaqueñas con tradición y pasión.
+        Productos artesanales elaborados por manos oaxaqueñas
+        que preservan nuestras tradiciones y fortalecen comunidades.
       </p>
 
+      <button>Conoce nuestros productos</button>
+
+      <div class="hero-icons">
+        <div>
+          <i class="fa-regular fa-hand"></i>
+          <span>Hecho a mano</span>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-leaf"></i>
+          <span>Materiales naturales</span>
+        </div>
+
+        <div>
+          <i class="fa-regular fa-heart"></i>
+          <span>Comercio justo</span>
+        </div>
+      </div>
     </div>
 
     <div class="hero-image">
-      <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?q=80&w=1200&auto=format&fit=crop">
+      <img src="https://images.unsplash.com/photo-1610701596061-2ecf227e85b2?q=80&w=1200&auto=format&fit=crop" alt="">
     </div>
-
   </section>
 
-  <!-- FILTROS -->
+  <!-- REGIONES -->
+  <section class="regions">
+    <div class="section-title">
+      <h2>Descubre la esencia de Oaxaca</h2>
+      <p>
+        Cada pieza cuenta una historia inspirada en nuestras regiones.
+      </p>
+    </div>
 
-  <section class="filters">
+    <div class="region-cards">
 
-    <button class="active">Todos</button>
-    <button>Café</button>
-    <button>Textiles</button>
-    <button>Artesanías</button>
-    <button>Mezcal</button>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop">
+        <div class="card-info">
+          <h3>Valles Centrales</h3>
+          <p>Tradición que florece</p>
+        </div>
+      </div>
 
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop">
+        <div class="card-info">
+          <h3>Costa</h3>
+          <p>Colores y texturas del mar</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop">
+        <div class="card-info">
+          <h3>Sierra Norte</h3>
+          <p>Naturaleza y herencia</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?q=80&w=1200&auto=format&fit=crop">
+        <div class="card-info">
+          <h3>Istmo</h3>
+          <p>Fuerza y creatividad</p>
+        </div>
+      </div>
+
+    </div>
   </section>
 
   <!-- PRODUCTOS -->
-
   <section class="products">
 
-    <!-- CARD -->
-
-    <div class="product-card">
-
-      <div class="product-image">
-
-        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=1200&auto=format&fit=crop">
-
-        <div class="heart">
-          <i class="fa-regular fa-heart"></i>
-        </div>
-
-      </div>
-
-      <div class="product-info">
-
-        <span class="category">Café</span>
-
-        <h3>Café Mixe Orgánico</h3>
-
-        <p class="location">
-          <i class="fa-solid fa-location-dot"></i>
-          San Juan Cotzocón, Oaxaca
-        </p>
-
-        <h4>$180 MXN</h4>
-
-        <button>Ver producto</button>
-
-      </div>
-
+    <div class="section-title">
+      <h2>Nuestros productos</h2>
     </div>
 
-    <!-- CARD -->
+    <div class="product-grid">
 
-    <div class="product-card">
-
-      <div class="product-image">
-
-        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=1200&auto=format&fit=crop">
-
-        <div class="heart">
-          <i class="fa-regular fa-heart"></i>
-        </div>
-
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=1200&auto=format&fit=crop">
+        <h3>Textiles</h3>
+        <p>$850 MXN</p>
       </div>
 
-      <div class="product-info">
-
-        <span class="category">Textiles</span>
-
-        <h3>Rebozo Artesanal</h3>
-
-        <p class="location">
-          <i class="fa-solid fa-location-dot"></i>
-          Ejutla de Crespo, Oaxaca
-        </p>
-
-        <h4>$350 MXN</h4>
-
-        <button>Ver producto</button>
-
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1517705008128-361805f42e86?q=80&w=1200&auto=format&fit=crop">
+        <h3>Barro negro</h3>
+        <p>$320 MXN</p>
       </div>
 
-    </div>
-
-    <!-- CARD -->
-
-    <div class="product-card">
-
-      <div class="product-image">
-
-        <img src="https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?q=80&w=1200&auto=format&fit=crop">
-
-        <div class="heart">
-          <i class="fa-regular fa-heart"></i>
-        </div>
-
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop">
+        <h3>Alebrije</h3>
+        <p>$780 MXN</p>
       </div>
 
-      <div class="product-info">
-
-        <span class="category">Artesanías</span>
-
-        <h3>Jarrón de Barro Mixe</h3>
-
-        <p class="location">
-          <i class="fa-solid fa-location-dot"></i>
-          Sierra Mixe, Oaxaca
-        </p>
-
-        <h4>$240 MXN</h4>
-
-        <button>Ver producto</button>
-
-      </div>
-
-    </div>
-
-    <!-- CARD -->
-
-    <div class="product-card">
-
-      <div class="product-image">
-
-        <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&w=1200&auto=format&fit=crop">
-
-        <div class="heart">
-          <i class="fa-regular fa-heart"></i>
-        </div>
-
-      </div>
-
-      <div class="product-info">
-
-        <span class="category">Mezcal</span>
-
-        <h3>Mezcal Artesanal</h3>
-
-        <p class="location">
-          <i class="fa-solid fa-location-dot"></i>
-          Matatlán, Oaxaca
-        </p>
-
-        <h4>$540 MXN</h4>
-
-        <button>Ver producto</button>
-
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1523413651479-597eb2da0ad6?q=80&w=1200&auto=format&fit=crop">
+        <h3>Canasta artesanal</h3>
+        <p>$450 MXN</p>
       </div>
 
     </div>
 
   </section>
 
-  <!-- BOTON -->
+  <!-- BANNER -->
+  <section class="banner">
+    <div class="banner-content">
+      <h2>Apoyamos comunidades, preservamos culturas</h2>
+      <p>
+        Al elegir Xanda apoyas directamente a artesanos y comunidades de Oaxaca.
+      </p>
 
-  <div class="load-more">
-    <button>
-      Cargar más productos
-      <i class="fa-solid fa-chevron-down"></i>
-    </button>
-  </div>
+      <button>Conoce a nuestros productores</button>
+    </div>
+  </section>
 
-  <script src="productos.js"></script>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
 
+      <div>
+        <h2>Xanda</h2>
+        <p>Plataforma artesanal inspirada en Oaxaca.</p>
+      </div>
+
+      <div>
+        <h4>Navegación</h4>
+        <a href="#">Inicio</a>
+        <a href="#">Productos</a>
+        <a href="#">Comunidades</a>
+      </div>
+
+      <div>
+        <h4>Síguenos</h4>
+        <div class="socials">
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-pinterest"></i>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
